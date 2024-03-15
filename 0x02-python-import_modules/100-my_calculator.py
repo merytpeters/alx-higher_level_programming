@@ -15,6 +15,7 @@ if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
     a = int(sys.argv[1])
     b = int(sys.argv[3])
+
     if op == '+':
         print("{} + {} = {}" .format(a, b, add(a, b)))
     elif op == '-':
