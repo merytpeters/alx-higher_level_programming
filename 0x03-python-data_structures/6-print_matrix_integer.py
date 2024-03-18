@@ -4,4 +4,5 @@ def print_matrix_integer(matrix=[[]]):
             print("{:d}".format(matrix[row][col]), end='')
             if col != (len(matrix[row]) - 1):
                 print(" ", end='')
+
         print()
