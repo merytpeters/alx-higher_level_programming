@@ -4,5 +4,6 @@ def multiple_returns(sentence):
 
     if lenSent == 0:
         sentence[0] = None
+        return (lenSent, sentence[0])
     else:
-        return(lenSent, sentence[0])
+        return (lenSent, sentence[0])
