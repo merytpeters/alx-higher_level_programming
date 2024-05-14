@@ -34,4 +34,4 @@ class Rectangle:
             else:
                 raise ValueError("height must be >= 0")
         else:
-            raise TypeError("height must be an integer")               
+            raise TypeError("height must be an integer")
