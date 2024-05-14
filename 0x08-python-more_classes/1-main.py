@@ -6,7 +6,9 @@ print(my_rectangle.__dict__)
 
 try:
     my_rectangle.width = "10"
-    my_rectangle.height = "3"
 except Exception as e:
     print("[{}] {}".format(e.__class__.__name__, e))
-    print(my_rectangle.__dict__)
+try:
+    my_rectangle.height = -3
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
