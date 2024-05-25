@@ -1,1 +1,1 @@
-This is the second programming language being taught in Alx-SE; Python
+This is a repository of higher level programming languages ; Python, C-Python, SQL
