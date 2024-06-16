@@ -1,4 +1,2 @@
--- Add new data and list score and name of table second_table
-INSERT INTO second_table (score, name) VALUES (18, 'Aria');
-INSERT INTO second_table (score, name) VALUES (12, 'Aria');
+-- list score and name of table second_table
 SELECT score, name FROM second_table WHERE name IS NOT NULL ORDER BY score DESC;
