@@ -8,6 +8,6 @@ if (argv.length === 3) {
     StrArg += argv[i] + ' ';
   }
   console.log(argv[2] + ' is ' + StrArg);
-} else {
+} else if (argv[1]) {
   console.log('undefined is undefined');
 }
