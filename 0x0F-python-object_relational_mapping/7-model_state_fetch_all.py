@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Start link class to table in database"""
+"""Prints all State objects from database"""
 
 
 import sys
