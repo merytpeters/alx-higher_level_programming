@@ -28,15 +28,17 @@ if __name__ == "__main__":
     session = Session()
 
     # Query state entereas argument
-    states = (
+    state = (
         session.query(State)
-        .filter(State.name.like('%{}%'.format(state_to_search)))
-        .order_by(State.id).all()
+        .filter(State.name == state_to_search)
+        .first()
     )
 
     # Print the id of fetched states
-    for state in states:
-        print("{}".format(state.id))
+    if state:
+        print(state.id)
+    else:
+        print("Not found")
 
     # Close session
     session.close()
