@@ -29,7 +29,7 @@ if __name__ == "__main__":
     # Creates a new state object
     new_state = State(name="Louisiana")
 
-    #Add the new state to the session
+    # Add the new state to the session
     session.add(new_state)
 
     # Commit the session
