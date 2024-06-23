@@ -23,7 +23,7 @@ if __name__ == "__main__":
         # Execute the query to list all states
         cursor.execute("SELECT * FROM states ORDER BY id ASC")
 
-        # Fetcha all rows returned by the query
+        # Fetch all rows returned by the query
         states = cursor.fetchall()
 
         # Print the fetched states
