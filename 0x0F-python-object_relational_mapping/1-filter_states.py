@@ -24,7 +24,8 @@ if __name__ == "__main__":
         # Execute the query to list all states
         cursor.execute(
             "SELECT * FROM states WHERE name "
-            "LIKE 'N%' ORDER BY id ASC"
+            "LIKE 'N%' COLLATE utf8_bin "
+            "ORDER BY id ASC"
         )
 
         # Fetch all rows returned by the query
