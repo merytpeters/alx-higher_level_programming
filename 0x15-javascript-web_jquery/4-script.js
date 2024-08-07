@@ -1,7 +1,7 @@
 $(document).ready(function () {
   // Add a click event listener to div
-  $('#red_header').click(function () {
+  $('#toggle_header').click(function () {
     // Select the header element using Jquery
-    $('header').css('color', '#FF0000');
+    $('header').toggleClass('red green');
   });
 });
