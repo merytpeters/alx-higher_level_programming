@@ -1,3 +1,4 @@
+import math
 The "0-add_integer" module
 ==========================
 
@@ -48,3 +49,16 @@ Adding '2':
     Traceback (most recent call last):
       ...
     TypeError: a must be an integer
+
+Adding float('inf'):
+    >>> add_integer(float('inf'))
+    Traceback (most recent call last):
+        ...
+    OverflowError: cannot convert float infinity to integer
+
+Adding float('-inf'):
+    >>> add_integer(float('-inf'))
+    Traceback (most recent call last):
+        ...
+    OverflowError: cannot convert float infinity to integer
+    
